@@ -1,0 +1,37 @@
+[
+  {
+    "code": "TX-000",
+    "name": "口香糖",
+    "price": 10
+  },
+  {
+    "code": "TX-001",
+    "name": "無糖綠茶",
+    "price": 25
+  },
+  {
+    "code": "TX-002",
+    "name": "洋芋片",
+    "price": 50
+  },
+  {
+    "code": "TX-003",
+    "name": "飯糰",
+    "price": 24
+  },
+  {
+    "code": "TX-004",
+    "name": "啤酒",
+    "price": 70
+  },
+  {
+    "code": "TX-005",
+    "name": "便當",
+    "price": 99
+  },
+  {
+    "code": "TX-006",
+    "name": "香菸(條)",
+    "price": 500
+  }
+]
