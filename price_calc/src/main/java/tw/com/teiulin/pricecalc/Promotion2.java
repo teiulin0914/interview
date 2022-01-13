@@ -13,6 +13,15 @@ public class Promotion2 extends Promotion {
     private final BigDecimal discountAmount;
 
     public Promotion2(List<String> productCodes, Long count, BigDecimal discountAmount) {
+        super(100, null);
+        this.productCodes = productCodes;
+        this.count = count;
+        this.discountAmount = discountAmount;
+    }
+
+    public Promotion2(int priority, String uniqueFlag,
+                      List<String> productCodes, Long count, BigDecimal discountAmount) {
+        super(priority, uniqueFlag);
         this.productCodes = productCodes;
         this.count = count;
         this.discountAmount = discountAmount;

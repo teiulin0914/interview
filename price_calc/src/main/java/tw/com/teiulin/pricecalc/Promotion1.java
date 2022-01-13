@@ -11,6 +11,14 @@ public class Promotion1 extends Promotion {
     private final Integer discountPercent;
 
     public Promotion1(BigDecimal amount, Integer discountPercent) {
+        super(100, null);
+        this.amount = amount;
+        this.discountPercent = discountPercent;
+    }
+
+    public Promotion1(int priority, String uniqueFlag,
+                      BigDecimal amount, Integer discountPercent) {
+        super(priority, uniqueFlag);
         this.amount = amount;
         this.discountPercent = discountPercent;
     }

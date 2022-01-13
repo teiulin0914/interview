@@ -16,6 +16,16 @@ public class Promotion5 extends Promotion {
     private final BigDecimal discountLimit;
 
     public Promotion5(BigDecimal amount, Integer discountPercent, BigDecimal discountLimit) {
+        super(100, null);
+        this.amount = amount;
+        this.discountPercent = discountPercent;
+        this.discountLimit = discountLimit;
+        this.discountRecordPerUser = new ConcurrentHashMap<>();
+    }
+
+    public Promotion5(int priority, String uniqueFlag,
+                      BigDecimal amount, Integer discountPercent, BigDecimal discountLimit) {
+        super(priority, uniqueFlag);
         this.amount = amount;
         this.discountPercent = discountPercent;
         this.discountLimit = discountLimit;

@@ -16,6 +16,15 @@ public class Promotion4 extends Promotion {
     private Long limit;
 
     public Promotion4(BigDecimal amount, BigDecimal discountAmount, Long limit) {
+        super(100, null);
+        this.amount = amount;
+        this.discountAmount = discountAmount;
+        this.limit = limit;
+    }
+
+    public Promotion4(int priority, String uniqueFlag,
+                      BigDecimal amount, BigDecimal discountAmount, Long limit) {
+        super(priority, uniqueFlag);
         this.amount = amount;
         this.discountAmount = discountAmount;
         this.limit = limit;

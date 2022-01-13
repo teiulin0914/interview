@@ -12,6 +12,14 @@ public class Promotion3 extends Promotion {
     private final Queue<Product> presents;
 
     public Promotion3(BigDecimal amount, Queue<Product> presents) {
+        super(100, null);
+        this.amount = amount;
+        this.presents = presents;
+    }
+
+    public Promotion3(int priority, String uniqueFlag,
+                      BigDecimal amount, Queue<Product> presents) {
+        super(priority, uniqueFlag);
         this.amount = amount;
         this.presents = presents;
     }
